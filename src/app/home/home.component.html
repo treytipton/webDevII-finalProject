@@ -1,3 +1,6 @@
-<div *ngFor="let post of demoPosts">
-    <p>{{post.content}}</p>
+<div *ngFor="let post of demoPosts" class="post-container">
+    <div class="post">
+        <h3>{{post.title}}</h3>
+        <p>{{post.content}}</p>
+    </div>
 </div>

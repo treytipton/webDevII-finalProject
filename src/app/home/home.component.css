@@ -1,0 +1,19 @@
+.post-container {
+    margin-bottom: 20px; /* Adjust spacing between posts */
+}
+
+.post {
+    border: 1px solid #ccc; /* Border around the post */
+    padding: 10px; /* Padding inside the post */
+    border-radius: 5px; /* Rounded corners for the post */
+    background-color: #f9f9f9; /* Background color for the post */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.post h3 {
+    margin-top: 0; /* Remove default margin for the title */
+}
+
+.post p {
+    margin-bottom: 0; /* Remove default margin for the content */
+}
