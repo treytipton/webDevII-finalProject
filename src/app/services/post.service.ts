@@ -38,7 +38,7 @@ export class PostService {
   }
 
   addPost() {
-    // will complete when we know definitively what attributes make up post
+    // will complete when we know definitively what attributes make up post and backend is setup
   }
 
 }

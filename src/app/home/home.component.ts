@@ -1,7 +1,9 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, contentChild } from '@angular/core';
 import { PostService } from '../services/post.service';
 import { Subscription } from 'rxjs';
 import { Post } from '../models/post.model';
+import { NgForm } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +12,7 @@ import { Post } from '../models/post.model';
 })
 export class HomeComponent implements OnInit, OnDestroy {
 
+  //Used now for setting structure up until db is going
   demoPosts: Post[] = [
     {
       id: "1",
@@ -58,5 +61,17 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.postSub.unsubscribe();
 }
+
+
+  //As backend starts to get built, I will integrate with Post Service
+  onAddPost(form: NgForm) {
+    const newPost: Post = {
+      id: "123456",
+      userID: "654321",
+      title: form.value.title,
+      content: form.value.content
+    }
+    this.demoPosts.push(newPost)
+  }
 
 }
