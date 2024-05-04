@@ -1,13 +1,19 @@
 .post-container {
-    margin-bottom: 20px; /* Adjust spacing between posts */
+    display: flex; /* Use flexbox to center the posts */
+    justify-content: center; /* Center items along the main axis (horizontally) */
+    align-items: center; /* Center items along the cross axis (vertically) */
+    margin-bottom: 20px; /* Adjust spacing between post containers */
 }
 
 .post {
-    border: 1px solid #ccc; /* Border around the post */
-    padding: 10px; /* Padding inside the post */
-    border-radius: 5px; /* Rounded corners for the post */
-    background-color: #f9f9f9; /* Background color for the post */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    width: 80%; /* Adjust width of the post container */
+    max-width: 600px; /* Set maximum width for better responsiveness */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center content inside the post */
 }
 
 .post h3 {

@@ -1,0 +1,30 @@
+.user-profile {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Set height to full viewport height */
+    margin-top: 5%; /* Add top margin to the user-profile container */
+  }
+    
+  .user-profile button, .user-profile p {
+    margin-top: 15px; /* Add space above buttons and paragraphs */
+    padding: 12px 24px; /* Add padding inside the buttons */
+    font-size: 16px; /* Set font size for buttons */
+    border: 2px solid #007bff; /* Add border with blue color */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    background-color: #007bff; /* Set background color for buttons */
+    color: #fff; /* Set text color for buttons */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add smooth transition effect */
+    margin: 5px;
+  }
+  
+  .user-profile button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+    border-color: #0056b3; /* Darker border color on hover */
+  }
+  
+  .user-profile p {
+    font-size: 18px; /* Set font size for paragraphs */
+  }
+  

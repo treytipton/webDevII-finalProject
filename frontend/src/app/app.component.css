@@ -1,0 +1,25 @@
+/* Apply styles to the body and HTML to ensure full height */
+html, body {
+    height: 100%; /* Make sure body and HTML element fill the viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Create a wrapper to hold site content and footer */
+  .wrapper {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    min-height: 100%; /* Ensure wrapper fills at least the viewport height */
+  }
+  
+  /* Flex container for the site content */
+  .site-content {
+    flex: 1; /* Allow site content to grow and fill remaining space */
+  }
+  
+  /* Footer styling */
+  app-footer {
+    flex-shrink: 0; /* Prevent footer from shrinking */
+    margin-top: 100%;
+  }
+  
