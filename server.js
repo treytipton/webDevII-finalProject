@@ -46,6 +46,7 @@ const onListening = () => {
   debug("Listening on " + bind);
 }
 
+//Makes it so that others will be using a unique port
 const port = normalizePort(process.env.PORT || "3000")
 app.set("port", port)
 
@@ -53,3 +54,4 @@ const server = http.createServer(app)
 server.on("error", onError)
 server.on("listening", onListening)
 server.listen(port)
+console.log('Server running at ', port)
