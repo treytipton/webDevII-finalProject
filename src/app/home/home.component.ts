@@ -12,7 +12,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit, OnDestroy {
 
-  postList: Post[] = [];
+  postList: Post[] = [  ];
   private postSub: Subscription;
 
   constructor(public postService: PostService){}

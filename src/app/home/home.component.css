@@ -1,33 +1,38 @@
-.bg {
-    background-color: cadetblue;
-}
-
 .form {
-    display: flex;
-    flex-direction: column;
     width: 50%;
-    margin-left: 25%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-.post-container {
-    margin-bottom: 20px; /* Adjust spacing between posts */
-}
-
-.post {
-    border: 1px solid #ccc; /* Border around the post */
-    padding: 10px; /* Padding inside the post */
-    border-radius: 5px; /* Rounded corners for the post */
-    background-color: #f9f9f9; /* Background color for the post */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding to the form */
+    background-color: #a9c5cd; /* Background color for the form */
+    border-radius: 5px; /* Add rounded corners to the form */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
-.post h3 {
-    margin-top: 0; /* Remove default margin for the title */
+.form textarea,
+.form button {
+    margin-bottom: 10px; /* Add margin between input areas and button */
+    background-color: #f9f9f9; /* Background color for input areas and button */
+    border: 1px solid #ccc; /* Add border to input areas and button */
+    border-radius: 5px; /* Add rounded corners to input areas and button */
+    padding: 10px; /* Add padding to input areas and button */
+    width: 100%; /* Make input areas and button full width */
 }
 
-.post p {
-    margin-bottom: 0; /* Remove default margin for the content */
+.form button {
+    cursor: pointer; /* Change cursor to pointer on button */
+    color: white; /* Text color for button */
+    background-color: cadetblue; /* Background color for button */
+    border: none; /* Remove border from button */
+}
+
+.form button:hover {
+    background-color: #5f9ea0; /* Change button background color on hover */
+}
+
+.form textarea::placeholder {
+    color: #999; /* Text color for placeholder text in input areas */
+}
+
+.form textarea:focus,
+.form button:focus {
+    outline: none; /* Remove focus outline from input areas and button */
 }
