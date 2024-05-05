@@ -17,11 +17,6 @@ body {
     padding: 0 20px; /* Add some padding to the sides of the container */
 }
 
-/* Navbar styles */
-.navbar {
-    background-color: cadetblue; /* Background color for the navbar */
-}
-
 .navbar-brand {
     color: white; /* Color of the navbar brand text */
 }
