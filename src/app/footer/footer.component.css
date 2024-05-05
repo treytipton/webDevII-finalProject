@@ -1,6 +1,25 @@
+.navbar {
+  background-color: #333 !important;
+}
+
+.navbar-light .navbar-brand {
+  color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
 footer {
-    background-color: #333; /* Background color for the footer */
-    color: white; /* Text color for the footer */
-    padding: 20px; /* Add padding inside the footer */
-    text-align: center; /* Align text to the center */
+  position: fixed;
+  bottom: 0; 
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
 }
