@@ -1,6 +1,19 @@
+.bg {
+    background-color: cadetblue; /* Background color for the entire page */
+    padding: 20px; /* Add padding to the entire page */
+}
+
+.bg h2 {
+    text-align: center; /* Center-align the heading */
+    padding-top: 10px; /* Add padding to the top of the heading */
+    font-weight: bold; /* Make the heading bold */
+    color: gold; /* Change the color of the heading */
+}
+
 .form {
     width: 50%;
     margin: 0 auto; /* Center the form horizontally */
+    margin-bottom: 20px; /* Add margin to the bottom of the form */
     padding: 20px; /* Add padding to the form */
     background-color: #a9c5cd; /* Background color for the form */
     border-radius: 5px; /* Add rounded corners to the form */
@@ -36,3 +49,25 @@
 .form button:focus {
     outline: none; /* Remove focus outline from input areas and button */
 }
+
+.post-container {
+    background-color: #a9c5cd; /* Background color for each post container */
+    margin-bottom: 20px; /* Adjust spacing between post containers */
+    border-radius: 5px; /* Add rounded corners to the post container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.post {
+    padding: 15px; /* Add padding inside the post */
+}
+
+.post h3 {
+    margin-top: 0; /* Remove default margin for the title */
+    color: #333; /* Text color for the title */
+}
+
+.post p {
+    margin-bottom: 0; /* Remove default margin for the content */
+    color: #666; /* Text color for the content */
+}
+
