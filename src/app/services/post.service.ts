@@ -13,6 +13,7 @@ export class PostService {
 
   private posts: Post[] = [];
   private postUpdate = new Subject<Post[]>();
+  private userIDcount = 0;
 
   constructor(private httpClient: HttpClient) { }
 
@@ -36,8 +37,15 @@ export class PostService {
     })
   }
 
-  addPost() {
-    // will complete when we know definitively what attributes make up post and backend is setup
+  addPost(title: string, content: string) {
+    const post: Post = {id:null, title: title, content: content, userID: null};
+    this.httpClient.post<{message: string, postID: string}>('http://localhost:3000/api/posts', post)
+    .subscribe((responseData) => {
+      const id = responseData.postID;
+      post.id = id;
+      this.posts.push(post);
+      this.postUpdate.next([...this.posts]);
+    })
   }
 
 }

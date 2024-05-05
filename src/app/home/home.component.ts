@@ -31,13 +31,8 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   //As backend starts to get built, I will integrate with Post Service
   onAddPost(form: NgForm) {
-    const newPost: Post = {
-      id: "123456",
-      userID: "654321",
-      title: form.value.title,
-      content: form.value.content
-    }
-    this.postList.push(newPost)
+    this.postService.addPost(form.value.title, form.value.content);
+    form.resetForm();
   }
 
 }
