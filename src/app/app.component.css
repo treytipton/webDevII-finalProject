@@ -1,0 +1,6 @@
+app-footer {
+    position: fixed; /* Position the footer */
+    left: 0; /* Stick it to the left side */
+    bottom: 0; /* Stick it to the bottom */
+    width: 100%; /* Make it full width */
+}

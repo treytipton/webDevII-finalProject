@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+/* Reset default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif; /* Set default font family */
+    background-color: cadetblue; /* Set background color for the entire project */
+}
+
+.container {
+    max-width: 1200px; /* Limit width of content for larger screens */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 0 20px; /* Add some padding to the sides of the container */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: cadetblue; /* Background color for the navbar */
+}
+
+.navbar-brand {
+    color: white; /* Color of the navbar brand text */
+}
+
+.navbar-brand:hover {
+    color: white; /* Color of the navbar brand text on hover */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Color of the navbar links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: white; /* Color of the navbar links on hover */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Customize the navbar toggler icon */
+}
+
+/* Profile page styles */
+.user-profile {
+    margin: 20px; /* Add some margin around the profile */
+    padding: 20px; /* Add padding inside the profile */
+    border: 1px solid #ccc; /* Add a border around the profile */
+    border-radius: 5px; /* Add rounded corners to the profile */
+    background-color: #f9f9f9; /* Background color for the profile */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.user-profile h2 {
+    margin-top: 0; /* Remove default margin for the username */
+}
+
+.user-profile p {
+    margin-bottom: 0; /* Remove default margin for the user ID */
+}

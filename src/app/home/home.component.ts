@@ -12,41 +12,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit, OnDestroy {
 
-  //Used now for setting structure up until db is going
-  demoPosts: Post[] = [
-    {
-      id: "1",
-      userID: "12341",
-      title: "First title",
-      content: "Content of first post!"
-    },
-    {
-      id: "2",
-      userID: "12342",
-      title: "Second title",
-      content: "Content of second post!"
-    },
-    {
-      id: "3",
-      userID: "12343",
-      title: "Third title",
-      content: "Content of third post!"
-    },
-    {
-      id: "4",
-      userID: "12344",
-      title: "Fourth title",
-      content: "Content of fourth post!"
-    },
-    {
-      id: "5",
-      userID: "12345",
-      title: "Fifth title",
-      content: "Content of fifth post!"
-    },
-  ];
-
-  postList: Post[] = [];
+  postList: Post[] = [  ];
   private postSub: Subscription;
 
   constructor(public postService: PostService){}
@@ -71,7 +37,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       title: form.value.title,
       content: form.value.content
     }
-    this.demoPosts.push(newPost)
+    this.postList.push(newPost)
   }
 
 }
