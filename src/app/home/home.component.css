@@ -1,73 +1,62 @@
 .bg {
-    background-color: cadetblue; /* Background color for the entire page */
-    padding: 20px; /* Add padding to the entire page */
-}
-
-.bg h2 {
-    text-align: center; /* Center-align the heading */
-    padding-top: 10px; /* Add padding to the top of the heading */
-    font-weight: bold; /* Make the heading bold */
-    color: gold; /* Change the color of the heading */
-}
-
-.form {
-    width: 50%;
-    margin: 0 auto; /* Center the form horizontally */
-    margin-bottom: 20px; /* Add margin to the bottom of the form */
-    padding: 20px; /* Add padding to the form */
-    background-color: #a9c5cd; /* Background color for the form */
-    border-radius: 5px; /* Add rounded corners to the form */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-}
-
-.form textarea,
-.form button {
-    margin-bottom: 10px; /* Add margin between input areas and button */
-    background-color: #f9f9f9; /* Background color for input areas and button */
-    border: 1px solid #ccc; /* Add border to input areas and button */
-    border-radius: 5px; /* Add rounded corners to input areas and button */
-    padding: 10px; /* Add padding to input areas and button */
-    width: 100%; /* Make input areas and button full width */
-}
-
-.form button {
-    cursor: pointer; /* Change cursor to pointer on button */
-    color: white; /* Text color for button */
-    background-color: cadetblue; /* Background color for button */
-    border: none; /* Remove border from button */
-}
-
-.form button:hover {
-    background-color: #5f9ea0; /* Change button background color on hover */
-}
-
-.form textarea::placeholder {
-    color: #999; /* Text color for placeholder text in input areas */
-}
-
-.form textarea:focus,
-.form button:focus {
-    outline: none; /* Remove focus outline from input areas and button */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
 }
 
 .post-container {
-    background-color: #a9c5cd; /* Background color for each post container */
-    margin-bottom: 20px; /* Adjust spacing between post containers */
-    border-radius: 5px; /* Add rounded corners to the post container */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+    margin-top: 5%;
 }
 
 .post {
-    padding: 15px; /* Add padding inside the post */
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px; 
 }
 
-.post h3 {
-    margin-top: 0; /* Remove default margin for the title */
-    color: #333; /* Text color for the title */
+.form {
+    width: 100%; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.post p {
-    margin-bottom: 0; /* Remove default margin for the content */
-    color: #666; /* Text color for the content */
+.input-field {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; 
 }
 
+button {
+    width: 100%; 
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

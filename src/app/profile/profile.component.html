@@ -1,7 +1,11 @@
 <div class="user-profile">
-    <h2 class="userNameDisplay">{{demoUser.username}}</h2>
-    <p class="userIDDisplay">User ID: {{demoUser.userID}}</p>
+  <div class="profile-picture">
+    <img src="assets/images/profile.jpg" alt="Profile Picture">
+  </div>
+  <div class="profile-details">
+    <h2>{{ demoUser.username }}</h2>
+    <p>User ID: {{ demoUser.userID }}</p>
     <!-- Space for displaying user posts -->
     <!-- Going to pull posts that match User ID and display them here -->
   </div>
-  
+</div>
