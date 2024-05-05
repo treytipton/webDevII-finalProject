@@ -28,11 +28,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.postSub.unsubscribe();
 }
 
-
-  //As backend starts to get built, I will integrate with Post Service
   onAddPost(form: NgForm) {
     this.postService.addPost(form.value.title, form.value.content);
-    form.resetForm();
+    //form.resetForm();
   }
 
 }
