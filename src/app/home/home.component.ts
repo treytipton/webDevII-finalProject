@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       title: form.value.title,
       content: form.value.content
     }
-    this.demoPosts.push(newPost)
+    //this.demoPosts.push(newPost)
   }
 
 }
