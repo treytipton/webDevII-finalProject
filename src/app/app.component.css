@@ -4,3 +4,11 @@ app-footer {
     bottom: 0; /* Stick it to the bottom */
     width: 100%; /* Make it full width */
 }
+
+.main-content {
+    padding-bottom: 25px; /*Helps content stay visible after adding posts.*/
+}
+
+.footer-placeholder { /*Allows you to view all posts without the content being blocked*/
+    height: 25px; 
+}
