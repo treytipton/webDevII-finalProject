@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const PostModel = require("./Models/post")
 
 //Password is: Angular
-mongoose.connect("mongodb+srv://Nathan:Angular@webdev2-finalproject.hef3jyb.mongodb.net/WebDev2FinalProjectretryWrites=true&w=majority&appName=WebDev2-FinalProject").then(()=>{
+mongoose.connect("mongodb+srv://Nathan:Angular@webdev2-finalproject.hef3jyb.mongodb.net/WebDev2FinalProject?retryWrites=true&w=majority&appName=WebDev2-FinalProject").then(()=>{
   console.log('Connected to database')
 })
 .catch(()=>{
