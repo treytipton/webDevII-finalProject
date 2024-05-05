@@ -1,0 +1,16 @@
+.user-profile {
+    margin: 20px; /* Add some margin around the profile */
+    padding: 20px; /* Add padding inside the profile */
+    border: 1px solid #ccc; /* Add a border around the profile */
+    border-radius: 5px; /* Add rounded corners to the profile */
+    background-color: #f9f9f9; /* Background color for the profile */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.user-profile h2 {
+    margin-top: 0; /* Remove default margin for the username */
+}
+
+.user-profile p {
+    margin-bottom: 0; /* Remove default margin for the user ID */
+}
